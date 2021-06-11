@@ -1,0 +1,108 @@
+{
+	"info": {
+		"_postman_id": "13450dcc-4b31-43aa-918c-e3c0b6e6f00a",
+		"name": "crack_detection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "localhost:5000/get_video",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "video",
+							"type": "file",
+							"src": "/home/aaa/Desktop/stream.mp4"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:5000/get_video",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"get_video"
+					],
+					"query": [
+						{
+							"key": "",
+							"value": null,
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:5000/get_video_status/stream",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:5000/get_video_status/stream",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"get_video_status",
+						"stream"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "ready",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:5000/get_video_status/stream",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"get_video_status",
+								"stream"
+							]
+						}
+					},
+					"_postman_previewlanguage": null,
+					"header": null,
+					"cookie": [],
+					"body": null
+				},
+				{
+					"name": "not ready",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:5000/get_video_status/stream",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"get_video_status",
+								"stream"
+							]
+						}
+					},
+					"_postman_previewlanguage": null,
+					"header": null,
+					"cookie": [],
+					"body": null
+				}
+			]
+		}
+	]
+}
