@@ -16,7 +16,7 @@ from utils.torch_utils import select_device, load_classifier, time_synchronized
 
 
 #test.246.jpg
-def detect(weights="drone_weights/best.pt",source="images/",imgsz=640,conf_thres=0.25,iou_thres=0.45,device='',view_img=False,save_txt=True,save_conf=False,save_img=False,nosave=False,classes=None,agnostic_nms=False,augment=False,project="infer_result/",name="result",exist_ok=True):
+def detect(weights="best.pt",source="images/",imgsz=640,conf_thres=0.25,iou_thres=0.45,device='',view_img=False,save_txt=True,save_conf=False,save_img=False,nosave=False,classes=None,agnostic_nms=False,augment=False,project="infer_result/",name="result",exist_ok=True):
     save_img = not nosave and not source.endswith('.txt')  # save inference images
     webcam = source.isnumeric() or source.endswith('.txt') or source.lower().startswith(
         ('rtsp://', 'rtmp://', 'http://', 'https://'))
